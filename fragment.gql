@@ -1,0 +1,17 @@
+query MyQuery {
+  g1: employees(
+    where: { Job: { id: { _eq: "d92f3314-6891-4991-bb8c-263b2be46f70" } } }
+  ) {
+    ...empFld
+  }
+  g2: employees(
+    where: { Job: { id: { _eq: "fc69c71d-5393-4993-b3d4-fb72e6db697b" } } }
+  ) {
+    ...empFld
+  }
+}
+
+fragment empFld on employees {
+  id
+  name
+}
