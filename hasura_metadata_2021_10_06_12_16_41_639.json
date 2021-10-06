@@ -1,0 +1,67 @@
+{
+  "resource_version": 12,
+  "metadata": {
+    "version": 3,
+    "sources": [
+      {
+        "name": "default",
+        "kind": "postgres",
+        "tables": [
+          {
+            "table": {
+              "schema": "public",
+              "name": "employees"
+            },
+            "object_relationships": [
+              {
+                "name": "Job",
+                "using": {
+                  "manual_configuration": {
+                    "remote_table": {
+                      "schema": "public",
+                      "name": "jobs"
+                    },
+                    "insertion_order": null,
+                    "column_mapping": {
+                      "job_id": "id"
+                    }
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "table": {
+              "schema": "public",
+              "name": "jobs"
+            },
+            "array_relationships": [
+              {
+                "name": "Employees",
+                "using": {
+                  "manual_configuration": {
+                    "remote_table": {
+                      "schema": "public",
+                      "name": "employees"
+                    },
+                    "insertion_order": null,
+                    "column_mapping": {
+                      "id": "job_id"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "configuration": {
+          "connection_info": {
+            "use_prepared_statements": false,
+            "database_url": "postgres://postgres:postgrespassword@postgres:5432/postgres",
+            "isolation_level": "read-committed"
+          }
+        }
+      }
+    ]
+  }
+}
