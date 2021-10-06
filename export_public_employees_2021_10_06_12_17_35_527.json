@@ -1,0 +1,74 @@
+[
+  {
+    "id": "06972f61-08d2-4d79-a4ea-9c0b1af06a4c",
+    "name": "Piyush Goyani",
+    "email": "piyush.goyani@ezt.com",
+    "job_id": "0f5ebc61-d19b-4072-b76e-dae9b0c567a4",
+    "created_at": "2021-10-06T06:42:03.469294+00:00",
+    "updated_at": "2021-10-06T06:42:03.469294+00:00"
+  },
+  {
+    "id": "f7282899-2fea-4a0e-89e8-5093617d9008",
+    "name": "Tejas Chauhan",
+    "email": "tejas.chauhan@ezt.com",
+    "job_id": "91fd40fa-0f3d-4559-8cfd-8f190410f30d",
+    "created_at": "2021-10-06T06:42:30.678777+00:00",
+    "updated_at": "2021-10-06T06:42:30.678777+00:00"
+  },
+  {
+    "id": "3e76cc2f-057d-4eb8-8ec3-39c6005e07db",
+    "name": "Riya Tailor",
+    "email": "riya.tailor@ezt.com",
+    "job_id": "4e903684-3e13-47e2-b12a-2463b8701c23",
+    "created_at": "2021-10-06T06:43:02.667525+00:00",
+    "updated_at": "2021-10-06T06:43:02.667525+00:00"
+  },
+  {
+    "id": "c657c930-d0c5-4ded-8f57-605de84a59ca",
+    "name": "Vaishali Patel",
+    "email": "vaishali.patel@ezt.com",
+    "job_id": "4e903684-3e13-47e2-b12a-2463b8701c23",
+    "created_at": "2021-10-06T06:43:20.65119+00:00",
+    "updated_at": "2021-10-06T06:43:20.65119+00:00"
+  },
+  {
+    "id": "1f664f7d-a89f-4b8d-9e26-c166d624c9a4",
+    "name": "Kesha Kapadia",
+    "email": "kesha.kapadia@ezt.com",
+    "job_id": "fc69c71d-5393-4993-b3d4-fb72e6db697b",
+    "created_at": "2021-10-06T06:43:44.715257+00:00",
+    "updated_at": "2021-10-06T06:43:44.715257+00:00"
+  },
+  {
+    "id": "8bf29271-e2f1-4427-8ef8-934b4e102bee",
+    "name": "Vinod MS",
+    "email": "vinod.ms@ezt.com",
+    "job_id": "d92f3314-6891-4991-bb8c-263b2be46f70",
+    "created_at": "2021-10-06T06:44:06.780104+00:00",
+    "updated_at": "2021-10-06T06:44:06.780104+00:00"
+  },
+  {
+    "id": "4ba94105-7d7f-4cb5-809f-624a0eff68be",
+    "name": "Kajal Singh",
+    "email": "kajal.singh@ezt.com",
+    "job_id": "d92f3314-6891-4991-bb8c-263b2be46f70",
+    "created_at": "2021-10-06T06:44:33.143218+00:00",
+    "updated_at": "2021-10-06T06:44:33.143218+00:00"
+  },
+  {
+    "id": "6de1bf36-9ca6-4a75-a71b-274fa6a88914",
+    "name": "Sachin Devaiya",
+    "email": "sachin.devaiya@ezt.com",
+    "job_id": "78951115-38c9-4c62-a139-444d859540e3",
+    "created_at": "2021-10-06T06:45:03.411477+00:00",
+    "updated_at": "2021-10-06T06:45:03.411477+00:00"
+  },
+  {
+    "id": "502eadbb-32fe-482e-8018-a0262b2b6db5",
+    "name": "Vijay RS",
+    "email": "vijay.rs@ezt.com",
+    "job_id": "2e5c7c68-f948-4302-95d5-33eeac00aeeb",
+    "created_at": "2021-10-06T06:45:53.524884+00:00",
+    "updated_at": "2021-10-06T06:45:53.524884+00:00"
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "78951115-38c9-4c62-a139-444d859540e3",
+    "name": "Software Developer"
+  },
+  {
+    "id": "d92f3314-6891-4991-bb8c-263b2be46f70",
+    "name": "Associate Software Developer"
+  },
+  {
+    "id": "fc69c71d-5393-4993-b3d4-fb72e6db697b",
+    "name": "Team Leader"
+  },
+  {
+    "id": "4e903684-3e13-47e2-b12a-2463b8701c23",
+    "name": "Web Designer"
+  },
+  {
+    "id": "0f5ebc61-d19b-4072-b76e-dae9b0c567a4",
+    "name": "Developer Associate"
+  },
+  {
+    "id": "91fd40fa-0f3d-4559-8cfd-8f190410f30d",
+    "name": "System Designer"
+  },
+  {
+    "id": "2e5c7c68-f948-4302-95d5-33eeac00aeeb",
+    "name": "Senior Software Developer"
+  }
+]
