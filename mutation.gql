@@ -1,0 +1,18 @@
+mutation InsertJobs($jobs: [jobs_insert_input]!) {
+  insert_jobs(objects: $jobs) {
+    returning {
+      id
+      name
+    }
+  }
+}
+{
+  "jobs": [
+    {"name":"Software Developer"},
+    {"name":"Developer Advocate"},
+    {"name":"Associate Software Developer"},
+    {"name":"Web Designer"},
+    {"name":"Team Leader"},
+    {"name":"System Designer"}
+  ]
+}
