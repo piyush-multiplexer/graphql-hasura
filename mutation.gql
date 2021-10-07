@@ -22,3 +22,23 @@ mutation MyMutation {
     affected_rows
   }
 }
+
+
+mutation InsertEmps($emps: [employee_insert_input]!) {
+  insert_employee(objects: $emps) {
+    returning {
+      id
+      name
+    }
+  }
+}
+{
+  "emps": [
+    {"name":"emp 1","email": "emp.1@find.job","job_id": "d62f97aa-c4f8-4618-a916-0f4108cc08bb"},
+    {"name":"emp 2","email": "emp.2@find.job","job_id": "34b3db5f-e09d-42a2-941b-ffbdcd865ac5"},
+    {"name":"emp 3","email": "emp.3@find.job","job_id": "05d76a9b-dd37-418e-a0d0-f2c85f33f85a"},
+    {"name":"emp 4","email": "emp.4@find.job","job_id": "9a169003-0dd4-4daf-82cf-b57f9594a520"},
+    {"name":"emp 5","email": "emp.5@find.job","job_id": "774b0a15-39ba-4413-baaa-21f7cfcf35a9"},
+    {"name":"emp 6","email": "emp.6@find.job","job_id": "5213e1bb-7a83-473c-ae0d-9fef8dd9c18d"}
+  ]
+}
