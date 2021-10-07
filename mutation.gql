@@ -16,3 +16,9 @@ mutation InsertJobs($jobs: [jobs_insert_input]!) {
     {"name":"System Designer"}
   ]
 }
+
+mutation MyMutation {
+  delete_jobs(where: {id: {_eq: "c32c36ac-51c6-4616-94e1-d335fbcaeb98"}}) {
+    affected_rows
+  }
+}
