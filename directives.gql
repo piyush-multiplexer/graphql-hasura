@@ -1,0 +1,13 @@
+query MyQuery2($job: Boolean!) {
+  employee {
+    id
+    name
+    Job @include(if: $job){
+      name
+    }
+  }
+}
+
+{
+  "job":false
+}
