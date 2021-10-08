@@ -1,0 +1,22 @@
+# get all types
+{
+  __schema {
+    queryType {
+      name
+    }
+  }
+}
+# get object type by naeme and all nested fields name and types
+{
+  __type(name: "employee") {
+    name
+    kind
+    fields {
+      name
+      type {
+        name
+        kind
+      }
+    }
+  }
+}
