@@ -1,0 +1,6 @@
+query MyQuery {
+  jobs(limit: 2, offset: 2) {
+    id
+    name
+  }
+}
