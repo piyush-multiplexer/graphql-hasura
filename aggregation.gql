@@ -1,0 +1,20 @@
+query MyQuery {
+  employee_aggregate {
+    aggregate {
+      count(columns: created_at, distinct: true)
+    }
+  }
+}
+
+query MyQuery {
+  employee_aggregate {
+    aggregate {
+      max {
+        name
+      }
+      min {
+        name
+      }
+    }
+  }
+}
