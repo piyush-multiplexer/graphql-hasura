@@ -42,3 +42,16 @@ mutation InsertEmps($emps: [employee_insert_input]!) {
     {"name":"emp 6","email": "emp.6@find.job","job_id": "5213e1bb-7a83-473c-ae0d-9fef8dd9c18d"}
   ]
 }
+
+
+mutation MyMutation {
+  update_employee(where: {job_id: {_eq: "5213e1bb-7a83-473c-ae0d-9fef8dd9c18d"}}, _set: {job_id: "2f7d4277-c837-47d5-ab61-57460c997e79"}) {
+    returning {
+      Job {
+        name
+      }
+      name
+      id
+    }
+  }
+}
