@@ -1,5 +1,13 @@
-# graphql-hasura
+# Vue + Apollo + GraphQL
 
-GraphQL with Hasura Project
+## Install Deps
 
-` Deployed Version on heroku and this codebase is different. `
+```
+npm install
+```
+
+### Run Dev Server
+
+```
+npm run serve
+```
