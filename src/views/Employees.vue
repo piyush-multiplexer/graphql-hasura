@@ -51,15 +51,31 @@ export default {
     },
   },
   apollo: {
-    employee: gql`
-      query {
-        employee {
-          id
-          name
-          email
+    employee: {
+      query: gql`
+        query {
+          employee {
+            id
+            name
+            email
+          }
         }
-      }
-    `,
+      `,
+      subscribeToMore: {
+        document: gql`
+          subscription {
+            employee {
+              id
+              name
+              email
+            }
+          }
+        `,
+        updateQuery: (previousResult, { subscriptionData }) => {
+          console.log(previousResult, subscriptionData);
+        },
+      },
+    },
   },
 };
 </script>

@@ -49,19 +49,39 @@ export default {
     },
   },
   apollo: {
-    jobs: gql`
-      query {
-        jobs {
-          id
-          name
-          Employees_aggregate {
-            aggregate {
-              count
+    jobs: {
+      query: gql`
+        query {
+          jobs {
+            id
+            name
+            Employees_aggregate {
+              aggregate {
+                count
+              }
             }
           }
         }
-      }
-    `,
+      `,
+      subscribeToMore: {
+        document: gql`
+          subscription {
+            jobs {
+              id
+              name
+              Employees_aggregate {
+                aggregate {
+                  count
+                }
+              }
+            }
+          }
+        `,
+        updateQuery: (previousResult, { subscriptionData }) => {
+          console.log(previousResult, subscriptionData);
+        },
+      },
+    },
   },
 };
 </script>
