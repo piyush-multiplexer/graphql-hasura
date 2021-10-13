@@ -11,5 +11,9 @@
     "nuxt3": "latest"
   },
   "_id": "@",
-  "readme": "ERROR: No README data found!"
+  "readme": "ERROR: No README data found!",
+  "dependencies": {
+    "@nuxtjs/apollo": "^4.0.1-rc.5",
+    "graphql-tag": "^2.12.5"
+  }
 }

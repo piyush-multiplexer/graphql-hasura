@@ -1,14 +1,12 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/employees">Employees</router-link> |
-      <router-link to="/jobs">Jobs</router-link>
+      <a href="/employees">Employees</a> | <a href="/jobs">Jobs</a>
     </div>
     <router-view />
   </div>
 </template>
-
-<style>
+<style scoped>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

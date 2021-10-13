@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <!-- Remove this component to get started! -->
-    <NuxtWelcome />
+  <div id="app">
+    <NuxtPage />
   </div>
 </template>
-
