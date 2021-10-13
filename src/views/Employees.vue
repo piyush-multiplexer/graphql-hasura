@@ -29,7 +29,25 @@ export default {
   methods: {
     afterSaveEmployee(obj) {
       this.isAdd = false;
-      console.log("main", obj);
+      this.$apollo
+        .mutate({
+          mutation: gql`
+            mutation InsertEmp($name: String!, $email: String) {
+              insert_employee(objects: { name: $name, email: $email }) {
+                returning {
+                  id
+                }
+              }
+            }
+          `,
+          variables: {
+            name: obj.name,
+            email: obj.email,
+          },
+        })
+        .then(() => {
+          alert("Employee Added");
+        });
     },
   },
   apollo: {

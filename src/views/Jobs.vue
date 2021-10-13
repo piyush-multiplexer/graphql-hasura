@@ -28,7 +28,24 @@ export default {
   methods: {
     afterSaveJob(obj) {
       this.isAdd = false;
-      console.log("main", obj);
+      this.$apollo
+        .mutate({
+          mutation: gql`
+            mutation InsertJob($name: String!) {
+              insert_jobs(objects: { name: $name }) {
+                returning {
+                  id
+                }
+              }
+            }
+          `,
+          variables: {
+            name: obj.name,
+          },
+        })
+        .then(() => {
+          alert("Job Added");
+        });
     },
   },
   apollo: {
