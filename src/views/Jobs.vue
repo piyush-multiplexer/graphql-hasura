@@ -16,7 +16,12 @@
         </ul>
       </div>
       <div style="margin-top: 25px" class="column right">
-        <button @click="deleteJob(job)">Delete</button>
+        <button
+          :disabled="job.Employees_aggregate.aggregate.count > 0"
+          @click="deleteJob(job)"
+        >
+          Delete
+        </button>
       </div>
     </div>
   </div>
