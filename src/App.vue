@@ -63,4 +63,11 @@ li {
   color: white;
   cursor: pointer;
 }
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
 </style>

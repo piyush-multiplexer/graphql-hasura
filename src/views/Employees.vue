@@ -7,11 +7,16 @@
       style="margin-top: 16px"
       @saveEmployee="afterSaveEmployee"
     ></AddEmployee>
-    <div v-for="(emp, index) in employee" :key="index">
-      <ul>
-        <li>Name: {{ emp.name }}</li>
-        <li>Email: {{ emp.email }}</li>
-      </ul>
+    <div class="row" v-for="(emp, index) in employee" :key="index">
+      <div class="column left">
+        <ul>
+          <li>Name: {{ emp.name }}</li>
+          <li>Email: {{ emp.email }}</li>
+        </ul>
+      </div>
+      <div style="margin-top: 25px" class="column right">
+        <button @click="deleteEmp(emp)">Delete</button>
+      </div>
     </div>
   </div>
 </template>
@@ -47,6 +52,25 @@ export default {
         })
         .then(() => {
           alert("Employee Added");
+        });
+    },
+    deleteEmp(obj) {
+      console.log(obj);
+      this.$apollo
+        .mutate({
+          mutation: gql`
+            mutation RemoveEmp($id: uuid!) {
+              delete_employee(where: { id: { _eq: $id } }) {
+                returning {
+                  id
+                }
+              }
+            }
+          `,
+          variables: { id: obj.id },
+        })
+        .then(() => {
+          alert("Employee Successfully Removed");
         });
     },
   },
