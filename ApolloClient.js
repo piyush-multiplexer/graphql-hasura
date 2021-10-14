@@ -8,13 +8,18 @@ import { getMainDefinition } from "apollo-utilities";
 
 const httpLink = new HttpLink({
   uri: "https://hasura-dash.herokuapp.com/v1/graphql",
-  headers: { "x-hasura-admin-secret": "password-key" },
 });
 
 const wsLink = new WebSocketLink({
   uri: "wss://hasura-dash.herokuapp.com/v1/graphql",
-  headers: { "x-hasura-admin-secret": "password-key" },
-  options: { reconnect: true },
+  options: {
+    reconnect: true,
+    connectionParams: {
+      headers: {
+        "x-hasura-admin-secret": "password-key",
+      },
+    },
+  },
 });
 
 const authLink = setContext((_, { headers }) => {
@@ -38,8 +43,7 @@ const link = split(
 );
 
 const apolloClient = new ApolloClient({
-  link,
-  authLink,
+  link: authLink.concat(link),
   cache: new InMemoryCache(),
   connectToDevTools: true,
 });
