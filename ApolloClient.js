@@ -17,6 +17,7 @@ const wsLink = new WebSocketLink({
     connectionParams: {
       headers: {
         "x-hasura-admin-secret": "password-key",
+        "x-hasura-role": "client",
       },
     },
   },
@@ -27,6 +28,7 @@ const authLink = setContext((_, { headers }) => {
     headers: {
       ...headers,
       "x-hasura-admin-secret": "password-key",
+      "x-hasura-role": "client",
     },
   };
 });
