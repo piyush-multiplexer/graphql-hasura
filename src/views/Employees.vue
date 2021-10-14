@@ -71,8 +71,8 @@ export default {
             }
           }
         `,
-        updateQuery: (previousResult, { subscriptionData }) => {
-          console.log(previousResult, subscriptionData);
+        updateQuery: function (previousResult, { subscriptionData }) {
+          this.employee = subscriptionData.data.employee;
         },
       },
     },
