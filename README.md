@@ -12,6 +12,6 @@ npm install
 npm run serve
 ```
 
-[FrontEnd](https://piyush-multiplexer.github.io/graphql-hasura/)
+[FrontEnd](https://graphql-vue.netlify.app/)
 
 [GraphQL](https://hasura-dash.herokuapp.com/)
