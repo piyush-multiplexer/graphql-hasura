@@ -15,3 +15,5 @@ npm run serve
 [FrontEnd](https://graphql-vue.netlify.app/)
 
 [GraphQL](https://hasura-dash.herokuapp.com/)
+
+[Linked Remote Schema](https://hasura-dash.herokuapp.com/console/remote-schemas/manage/test-hello/details)

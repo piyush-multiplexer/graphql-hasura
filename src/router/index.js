@@ -15,6 +15,14 @@ const routes = [
     name: "Jobs",
     component: () => import(/* webpackChunkName: "jobs" */ "../views/Jobs.vue"),
   },
+  {
+    path: "/remote-schema",
+    name: "Remote Schema",
+    component: () =>
+      import(
+        /* webpackChunkName: "remote-schema" */ "../views/RemoteSchema.vue"
+      ),
+  },
 ];
 
 const router = new VueRouter({
