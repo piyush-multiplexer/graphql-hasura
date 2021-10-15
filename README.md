@@ -1,4 +1,4 @@
-# Vue + Apollo + GraphQL
+# Vue + Apollo + GraphQL [![Netlify Status](https://api.netlify.com/api/v1/badges/c434b2ea-96cf-4447-a33b-60ddeebb0ab3/deploy-status)](https://app.netlify.com/sites/graphql-vue/deploys)
 
 ## Install Deps
 
